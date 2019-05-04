@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LightHouse</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  </head>
+  <body>
+    
+    <!-- Navigation -->
+    <nav style="background-color: DarkTurquoise;" class="navbar navbar-default">
+      <div class="container-fluid" >
+        <div class="sticky">
+          <a class="navbar-brand" style="float: left" href="#" >
+              <svg viewBox="0 0 3 2" width="75" height="50">
+                <polygon fill="LightGrey" points="0 2 0 0 2 0">
+                <animate
+                  attributeName="points"
+                  calcMode="spline"
+                  dur="4s"
+                  keySplines="
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1"
+                  keyTimes="0; .1; .2; .3; .7; .8; 1"
+                  repeatCount="indefinite"
+                  values="
+                    0 2 0 0 2 0;
+                    0 2 0 0 2 0;
+                    0 2 2 2 2 0;
+                    0 2 2 2 0 0;
+                    0 2 2 2 0 0;
+                    0 2 0 0 2 0;
+                    0 2 0 0 2 0" />
+                </polygon>
+                <polygon fill="#ff004f" points="1 2 1 0 3 0">
+                <animate
+                  attributeName="points"
+                  calcMode="spline"
+                  dur="4s"
+                  keySplines="
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1;
+                    .25 .1 .25 1"
+                  keyTimes="0; .1; .3; .4; .5; .6; .7; .8; .9; 1"
+                  repeatCount="indefinite"
+                  values="
+                    1 2 1 0 3 0;
+                    2 2 0 2 2 0;
+                    2 2 0 2 2 0;
+                    2 2 0 0 2 0;
+                    2 2 0 0 0 2;
+                    2 2 2 0 0 2;
+                    0 0 2 0 0 2;
+                    0 0 2 0 0 2;
+                    1 0 3 0 1 2;
+                    1 0 3 0 1 2" />
+                </polygon>
+              </svg>
+          </a>
+          <div class="titles">L I G H T H O U S E</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="contents" style="background-image: url(img/logo.jpg)">
+
+      <!-- add spacing here on top -->
+      <p></p>
+      <p></p>
+
+      <p>We hope that you're enjoying your stroll.</p>        
+      <p>Are you lost? We can help.</p>
+      
+    </div>
+
+    <div class="subtitle" 
+    style="background-color: PaleTurquoise;">
+      <a  name="b1" class="anchor" id="b1" href="#b1">
+        <p style="line-height: 50px; padding: 5px"><i class="arrow down"></i> Directions <i class="arrow down"></i></p>
+      </a>
+    </div>
+
+    <div id="map" style="height: 100%"></div>
+    <script src="map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap"></script>
+
+    <div class="contentText">
+      <a style="background-color: #FAB768; " href="#b2">
+        <p style="line-height: 75px; padding: 5px"><i class="arrow down"></i> Need More Help? Click Me <i class="arrow down"></i></p>
+      </a>
+    </div>
+
+    <div
+    class="contentText" 
+    style="background-color: LightSkyBlue ">
+    <a name="b2" class="anchor" id="b2"></a>
+    <p style="line-height: 65px; padding: 5px">Contact Someone?</p>
+    </div>
+
+    <div 
+    class="subtitle2" 
+    style="background-color: LightSkyBlue" class="row text-center">
+    <button type="button" class="btn btn-outline-light btn-lg" class="pagination-centered"><a id="link" href="tel:+6478643658">Call family</a></button>
+    </div>
+
+
+    <div 
+    class="subtitle2" 
+    style="background-color:  PaleTurquoise">
+    <button type="button" class="btn btn-outline-light btn-lg" class="text-center"><a id="twolink"href="tel:+6478643658">Call emergency</a></button>
+    </div>
+
+    <div class="contents">
+      <p>lorem est blah blah.</p>
+      
+    </div>
+
+  </body>
+</html>
