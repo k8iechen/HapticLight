@@ -160,9 +160,3 @@ while True:
 
     #ser1 = serial.Serial('COM3', 9600)
     #ser1.write(sig.encode())
-
-
-
-
-# 8:20 - A
-# C:\Users\David\AppData\Local\Programs\Python\Python36\python.exe math.py

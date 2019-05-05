@@ -16,7 +16,7 @@ function getRoute() {
   };
 
   nitori.directions(request, function(err, data) {
-    result = JSON.stringify(data.routes[0].legs[0].steps);
+    result = JSON.stringify(data);
     console.log(result)
     fs.writeFile("./directions.json", result, (err) => console.error);
   });
